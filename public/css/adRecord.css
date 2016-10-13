@@ -1,0 +1,29 @@
+.adRecord-unit {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	display: block;
+	width: 96%;
+	margin: 2%;
+	padding: 0.5em;
+	background-color: #fdfdfd;
+	border: 2px solid #ddd;
+	border-radius: 10px;
+}
+.adRecord-record {
+	border: 1px solid #ccc;
+	border-left: 6px solid #4caf50;
+	border-radius: 5px;
+	padding: 0.3em;
+	background-color: #fff;
+}
+.adRecord-title {
+	padding: 0.4em;
+	text-align: center;
+	float: left;
+}
+.adRecord-title-right {
+	padding: 0.4em;
+	text-align: center;
+	float: right;
+}

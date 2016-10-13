@@ -1,0 +1,31 @@
+.nav {
+	border: 2px solid black;
+	display: table;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	background-color: #353e45;
+	list-style: none;
+}
+.nav a {
+	display: table-cell;
+	padding: 5px;
+	color: white;
+	border: 1px solid white;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.nav a:not(.active):hover{
+	background-color: #4caf77;
+}
+
+.nav a {
+	-webkit-transition: all 140ms 80ms ease;
+	-moz-transition: all 140ms 80ms ease;
+	transition: all 140ms 80ms ease;
+}

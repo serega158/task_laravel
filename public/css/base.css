@@ -1,0 +1,35 @@
+.block {
+	background-color: #f8f8f8;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border-radius: 18px;
+	padding: 2%;
+	box-shadow: 0 6px 18px 0 rgba(0,0,0,0.25);
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.clear:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.blank {
+	color: black;
+	background-color: white;
+	border-radius: 20px;
+}
+.center {
+	text-align: center;
+}
+.button {
+	display: block;
+	border: 2px solid black;
+	text-align: center;
+	padding: 5px;
+	margin: 15px;
+}
