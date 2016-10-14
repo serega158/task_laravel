@@ -59,11 +59,16 @@ class ProfileController extends Controller
 				->withInput();
 		} else {
 			$filter = new Filter();
-			$filter->brand_car_name = Input::get('brand_car_name');
-			$filter->model_name = Input::get('model_name');
-			$filter->year_issue = Input::get('year_issue');
-			$filter->mileage = Input::get('mileage');
-			$filter->price = Input::get('price');
+			$filter->brand_car_name = Input::has('brand_car_name') ?
+				Input::get('brand_car_name') : '-1';
+			$filter->model_name = Input::has('model_name') ?
+				Input::get('model_name') : '-1';
+			$filter->year_issue = Input::has('year_issue') ?
+				Input::get('year_issue') : '-1';
+			$filter->mileage = Input::has('mileage') ?
+				Input::get('mileage') : '-1';
+			$filter->price = Input::has('price') ?
+				Input::get('price') : '-1';
 			$filter->active = (Input::get('active') ? '1' : '0');
 			$filter->user_id = Session::get('id');
 			$filter->save();

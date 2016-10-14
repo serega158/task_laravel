@@ -15,10 +15,8 @@ class Filter extends Model
     }
 
     public static $rules = array(
-        'brand_car_name'             => 'required',
-        'model_name'             => 'required',
-        'year_issue'             => 'required|numeric',
-        'mileage'             => 'required|numeric',
-        'price'             => 'required|numeric'
+        'year_issue'             => 'numeric',
+        'mileage'             => 'numeric',
+        'price'             => 'numeric'
     );
 }
